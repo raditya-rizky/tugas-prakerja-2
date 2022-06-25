@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Goals Akhir</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <ul id="nav">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">PRODUCT</a></li>
+        <li><a href="#">GALLERY</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">MY INVENTORY</a></li>
+      </ul>
+      <div class="button">
+        <span id="menu"><button>MENU</button></span>
+      </div>
+    </nav>
+
+    <!-- section profile -->
+    <div class="section">
+      <div id="profile">
+        <div id="imgProfile">
+          <img src="./index.jpg" alt="person" />
+        </div>
+        <div id="about">
+          <h1>Ida Bagus Komang Raditya Rizky Dharma Putra</h1>
+          <p>Front End Developer</p>
+          <div id="action">
+            <button class="btn1" type="button">Kontak</button>
+            <button class="btn2" type="button">Resume</button>
+          </div>
+        </div>
+        <div id="detail">
+          <table>
+            <tr>
+              <td>Available</td>
+              <td>Full Time</td>
+            </tr>
+            <tr>
+              <td>Usia</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Lokasi</td>
+              <td>Bali, Indonesia</td>
+            </tr>
+            <tr>
+              <td>Pengalaman</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td>gusrizkydharmaputra123@gmail.com</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- form input -->
+    <div class="formInput">
+      <div id="form">
+        <form>
+          <div>
+            <label for="nama">Nama</label><br />
+            <input type="text" id="nama" />
+          </div>
+          <div>
+            <label for="role">Role</label><br />
+            <input type="text" id="role" />
+          </div>
+          <div>
+            <label for="availability">Availability</label><br />
+            <input type="text" id="availability" />
+          </div>
+          <div>
+            <label for="age">Age</label><br />
+            <input type="number" id="age" />
+          </div>
+          <div>
+            <label for="location">Location</label><br />
+            <input type="text" id="location" />
+          </div>
+          <div>
+            <label for="experience">Experience</label><br />
+            <input type="number" id="experience" />
+          </div>
+          <div>
+            <label for="email">Email</label><br />
+            <input type="email" id="email" />
+          </div>
+          <div>
+            <button class="btnSubmit" type="button">SUBMIT</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      const menu = document.querySelector("#menu");
+      const nav = document.querySelector("#nav");
+      menu.addEventListener("click", () => {
+        nav.classList.toggle("slide");
+      });
+    </script>
+  </body>
+</html>
